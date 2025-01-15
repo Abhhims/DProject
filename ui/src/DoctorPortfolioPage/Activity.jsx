@@ -1,10 +1,11 @@
 import { Box, Button, Stack, Typography } from '@mui/material';
 import React, { useRef, useState } from 'react';
-import youtube from "./youtube.png"
-import skills from "./skills.png"
-import notification from "./notification.png"
-import location from "./location.png"
-import twitter from "./twitter.png"
+import youtube from "./youtubeimg.png"
+import skills from "./skillsimg.png"
+import notification from "./notificationimg.png"
+import location from "./locationimg.png"
+import twitter from "./twitterimg.png"
+import education from './education.png'
 import CustomCard2 from './CardType2';
 import HospitalModal from './HospitalModal';
 
@@ -14,7 +15,7 @@ const Activity = () => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
    
-    const content=[{img:youtube,title:'YouTube'},{img:twitter,title:'Twitter'},{img:skills,title:'List of advanced skills'},{img:skills,title:'List of continued Medical education'},{img:location,title:'List of hospitals available'},{img:notification,title:'Notifications'}]
+    const content=[{img:youtube,title:'YouTube'},{img:twitter,title:'Twitter'},{img:skills,title:'List of advanced skills'},{img:education,title:'List of continued Medical education'},{img:location,title:'List of hospitals available'},{img:notification,title:'Notifications'}]
     return (
         <>
             <Box
