@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<DoctorPortfolio />} />
           <Route path="/activity" element={<Latestactivity />} />
+          <Route path="*" element={<DoctorPortfolio />} />
         </Routes>
         <Footer></Footer>
         </div>

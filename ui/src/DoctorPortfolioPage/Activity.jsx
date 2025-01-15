@@ -5,7 +5,6 @@ import skills from "./skills.png"
 import notification from "./notification.png"
 import location from "./location.png"
 import twitter from "./twitter.png"
-import CustomCard from './Card';
 import CustomCard2 from './CardType2';
 import HospitalModal from './HospitalModal';
 
