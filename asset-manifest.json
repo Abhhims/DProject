@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DProject/static/css/main.7a80a220.css",
-    "main.js": "/DProject/static/js/main.80d566be.js",
+    "main.js": "/DProject/static/js/main.50056024.js",
     "static/js/453.63c4db86.chunk.js": "/DProject/static/js/453.63c4db86.chunk.js",
     "static/media/brain.png": "/DProject/static/media/brain.8718906fa91bba9dccb5.png",
     "static/media/lungs.png": "/DProject/static/media/lungs.162a03d3927620ccb7d2.png",
@@ -11,6 +11,9 @@
     "static/media/liver.png": "/DProject/static/media/liver.45c196955bdfdb4ce4fe.png",
     "static/media/person.png": "/DProject/static/media/person.6a7b95dca3c451cb17f8.png",
     "static/media/kanalogo.png": "/DProject/static/media/kanalogo.7e24e704d3655cdf305f.png",
+    "static/media/skillsimg.png": "/DProject/static/media/skillsimg.0183b868cef1345d16a4.png",
+    "static/media/education.png": "/DProject/static/media/education.cd1a5d6e4b93f04d3a1f.png",
+    "static/media/notificationimg.png": "/DProject/static/media/notificationimg.e7b8e3778d56672c93d2.png",
     "static/media/manglogo.png": "/DProject/static/media/manglogo.8b3e811f0697d7f4dc80.png",
     "static/media/heartText.png": "/DProject/static/media/heartText.945c7e68941a3afde5b3.png",
     "static/media/emergencyText.png": "/DProject/static/media/emergencyText.721290f5850a4e49f396.png",
@@ -19,24 +22,23 @@
     "static/media/emergency.png": "/DProject/static/media/emergency.ae6ff25551639f26e086.png",
     "static/media/bodyparts.png": "/DProject/static/media/bodyparts.dc078899155bd46f3c92.png",
     "static/media/brainText.png": "/DProject/static/media/brainText.3c3788b46083806d5e2b.png",
+    "static/media/youtubeimg.png": "/DProject/static/media/youtubeimg.51d77ef72b7d2fe09642.png",
     "static/media/kidenyText.png": "/DProject/static/media/kidenyText.601176199aee7357bce1.png",
     "static/media/liverText.png": "/DProject/static/media/liverText.4a89e8783e4666f0c563.png",
     "static/media/footerlogo.png": "/DProject/static/media/footerlogo.27dbde027abc1482f4bd.png",
     "static/media/commonlogo.png": "/DProject/static/media/commonlogo.5f4d14f629599537c61d.png",
     "static/media/logo.png": "/DProject/static/media/logo.3258c9903969fb93e500.png",
+    "static/media/twitterimg.png": "/DProject/static/media/twitterimg.2f40bb32f6f81cbb48de.png",
     "static/media/tatalogo.png": "/DProject/static/media/tatalogo.15162e256e329342167c.png",
-    "static/media/skills.png": "/DProject/static/media/skills.41fa760bafdfa05dd28d.png",
-    "static/media/location.png": "/DProject/static/media/location.5affafdb615d9d3a92c5.png",
-    "static/media/notification.png": "/DProject/static/media/notification.5f6c9ab3cde088dfe62d.png",
-    "static/media/youtube.png": "/DProject/static/media/youtube.6290bbec3bcf415dc6dd.png",
+    "static/media/locationimg.png": "/DProject/static/media/locationimg.6e12a0c8dea5b97942c7.png",
     "static/media/assistant.png": "/DProject/static/media/assistant.becaa709cbf0ebe3a960.png",
     "index.html": "/DProject/index.html",
     "main.7a80a220.css.map": "/DProject/static/css/main.7a80a220.css.map",
-    "main.80d566be.js.map": "/DProject/static/js/main.80d566be.js.map",
+    "main.50056024.js.map": "/DProject/static/js/main.50056024.js.map",
     "453.63c4db86.chunk.js.map": "/DProject/static/js/453.63c4db86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a80a220.css",
-    "static/js/main.80d566be.js"
+    "static/js/main.50056024.js"
   ]
 }
