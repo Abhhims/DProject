@@ -41,11 +41,11 @@ const HospitalModal = ({handleClose,open}) => {
             bgcolor: 'background.paper',
             borderRadius: '10px',
             boxShadow: 24,
-            height:'80%',
             overflow:'auto',
             scrollbarWidth:0,
+            maxHeight:'90%',
             boxSizing:'border-box',
-            p: {xs:3,md:'40px 40px 100px 40px',lg:'40px 40px 100px 40px'}
+            p: {xs:3,md:'20px 30px 70px 30px',lg:'20px 30px 80px 30px'}
           }}
         >
           <Box
@@ -85,10 +85,10 @@ const HospitalModal = ({handleClose,open}) => {
                 >
                   <CardMedia
                     component="img"
-                    height="40"
+                    height="40px"
                     image={hospital.logo}
                     alt={`${hospital.name} logo`}
-                    sx={{ marginBottom: '10px', objectFit: 'contain',width:'30%' }}
+                    sx={{ margin: '10px 20px',height:'60px',width:'60px'}}
                   />
                   <CardContent sx={{textAlign:'start'}}>
                     <Typography

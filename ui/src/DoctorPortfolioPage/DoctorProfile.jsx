@@ -98,7 +98,7 @@ const DoctorProfile = () => {
               borderRadius: "50px",
               boxShadow: "0px 4px 4px rgba(86, 167, 209, 0.16)",
               "&:hover": {
-                backgroundColor: "#007bff",
+                backgroundColor: "rgb(94, 168, 213)",
                 color: "black",
               },
               padding: "6px 10px",
@@ -129,7 +129,7 @@ const DoctorProfile = () => {
               borderRadius: "50px",
               boxShadow: "0px 4px 4px rgba(86, 167, 209, 0.16)",
               "&:hover": {
-                backgroundColor: "#007bff",
+                backgroundColor: "rgb(94, 168, 213)",
                 color: "black",
               },
               padding: "6px 10px",
