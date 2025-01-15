@@ -18,7 +18,7 @@ const About = () => {
     <Typography
       sx={{ color: "rgba(17, 128, 195, 1)",fontWeight:'400',fontSize:{xs:'14px',md:'16px',lg:'18px'} }}
       >
-   Mechanical Ventilation, Cardiac Arrest, Shock, Multiple Organ Failure
+   Mechanical Ventilation ,ECMO, Cardiac Arrest, Shock, Multiple Organ Failure
     </Typography>
         <img src={beat} alt="" style={{ maxWidth: '40px', width: '100%', margin: '30px 0 20px 0' }} />
         <img src={bodyparts} alt="bodyparts" style={{ maxWidth: '700px', width: '100%', margin: '10px',marginLeft:'40px',marginRight:'40px' }} />

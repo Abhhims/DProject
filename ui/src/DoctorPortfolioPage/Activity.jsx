@@ -15,7 +15,7 @@ const Activity = () => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
    
-    const content=[{img:youtube,title:'YouTube'},{img:twitter,title:'Twitter'},{img:skills,title:'List of advanced skills'},{img:education,title:'List of continued Medical education'},{img:location,title:'List of hospitals available'},{img:notification,title:'Notifications'}]
+    const content=[{img:youtube,title:'YouTube'},{img:twitter,title:'Twitter'},{img:skills,title:'Advanced skills'},{img:education,title:'Continued Medical education'},{img:location,title:'List of hospitals available'},{img:notification,title:'Notifications'}]
     return (
         <>
             <Box

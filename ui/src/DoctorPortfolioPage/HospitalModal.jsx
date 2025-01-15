@@ -13,11 +13,11 @@ import CloseIcon from '@mui/icons-material/Close';
 import logo from "./manglogo.png"
 
 const hospitals = [
-  { id: 1, name: 'Jayasree Hospital', location: 'Mangaluru', logo: logo },
-  { id: 2, name: 'Srinivasa Hospital', location: 'Mangaluru', logo: logo },
-  { id: 3, name: 'Mangala Hospital', location: 'Mangaluru', logo: logo },
-  { id: 4, name: 'SCS Hospital', location: 'Mangaluru', logo: logo },
-  { id: 5, name: 'Mangalore Nursing Home', location: 'Mangaluru', logo: logo },
+  { id: 1, name: 'Mangala Hospital', location: 'Mangaluru', contact: '09449503512' },
+  { id: 2, name: 'Srinivasa Hospital', location: 'Mangaluru', contact: '08242478586 ' },
+  { id: 3, name: 'Jayasree Hospital', location: 'Mangaluru', contact: '08217026883' },
+  { id: 4, name: 'SCS Hospital', location: 'Mangaluru', contact: '08242881100' },
+  { id: 5, name: 'Mangalore Nursing Home', location: 'Mangaluru', contact: '08242218316' },
 ];
 
 const HospitalModal = ({handleClose,open}) => {
@@ -68,42 +68,90 @@ const HospitalModal = ({handleClose,open}) => {
              {/* Grid Layout for Hospitals */}
           <Grid container spacing={3}  sx={{maxWidth:'700px',width:'100%',justifyContent:'center',gap:2}} >
             {hospitals.map((hospital) => (
-        
-                <Card key={hospital.id}
-                  sx={{
-                    border: '1px solid #007BFF',
-                    borderRadius: '8px',
-                    textAlign: 'center',
-                    padding: '5px',
-                    display:'flex',
-                    flexDirection:'row-reverse',
-                    alignItems:'center',
-                    width:'100%',
-                    maxWidth:'300px',
-                    justifyContent:'space-between'
-                  }}
-                >
-                  <CardMedia
-                    component="img"
-                    height="40px"
-                    image={hospital.logo}
-                    alt={`${hospital.name} logo`}
-                    sx={{ margin: '10px 20px',height:'60px',width:'60px'}}
-                  />
-                  <CardContent sx={{textAlign:'start'}}>
-                    <Typography
-                      variant="body1"
-                      fontWeight="bold"
-                      gutterBottom
-                      sx={{fontSize:{xs:'12px',md:'18px',lg:'20px'}}}
-                    >
-                      {hospital.name}
-                    </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{fontSize:{xs:'12px',md:'18px',lg:'20px'}}}>
-                      {hospital.location}
-                    </Typography>
-                  </CardContent>
-                </Card>
+        <Card
+        key={hospital.id}
+        sx={{
+          border: '1px solid #007BFF',
+          borderRadius: '8px',
+          padding: '10px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          width: '100%',
+          maxWidth: '300px',
+          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+          transition: 'transform 0.2s ease-in-out',
+          '&:hover': {
+            transform: 'scale(1.05)',
+          },
+        }}
+      >
+        <CardContent
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            gap: '5px',
+            width: '100%',
+            padding:'0',
+            paddingBottom:'0',
+            '&.css-1gca02x-MuiCardContent-root:last-child':{
+              paddingBottom:'0'
+            }
+          }}
+        >
+          <Typography
+            variant="body1"
+            fontWeight="bold"
+            gutterBottom
+            sx={{
+              fontSize: { xs: '14px', md: '18px', lg: '20px' },
+              color:'rgb(0, 81, 130)',
+            }}
+          >
+            {hospital.name}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ fontSize: { xs: '12px', md: '16px', lg: '18px' } }}
+          >
+            {hospital.location}
+          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              marginTop: '8px',
+            }}
+          >
+            <Typography
+              variant="body1"
+              sx={{
+                fontSize: { xs: '12px', md: '16px', lg: '18px' },
+                color: '#333',
+                fontWeight: 'bold',
+              }}
+            >
+              Contact{' '} :
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{
+                fontSize: { xs: '12px', md: '16px', lg: '18px' },
+                color: '#007BFF',
+                textDecoration: 'underline',
+                cursor: 'pointer',
+              }}
+              onClick={() => window.location.href = `tel:${hospital.contact}`}
+            >
+              {hospital.contact}
+            </Typography>
+          </Box>
+        </CardContent>
+      </Card>
+      
             ))}
           </Grid>
          </Box>

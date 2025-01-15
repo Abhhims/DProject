@@ -408,17 +408,17 @@ function Education() {
             sx={{ backgroundColor: "white" }}
           >
             <Avatar
-              src={manlogo}
+              src={tatalogo}
               alt="Hospital Logo"
-              sx={{ width: 40, height: 40 }}
+              sx={{ width: 65, height:65 }}
               mt={1}
               mb={1}
             />
             <Typography mt={1} mb={1} fontSize={"20px"} fontWeight={"700"}>
               DM
             </Typography>
-            <Typography mt={1} mb={1} fontSize={"20px"} fontWeight={"400"}>
-              TATA memorial hospital Centre Mumbai
+            <Typography  width={'200px'} mt={1} mb={1} fontSize={"20px"} fontWeight={"400"}>
+            Tata Memorial Centre, Mumbai
             </Typography>
             <Stack
               mt={1}
@@ -434,7 +434,7 @@ function Education() {
             </Stack>
             <Typography mt={1} mb={1}>
               TMC is premier cancer institute with renowned Critical Care
-              faculty, started first DM Critical Care course in India. Cot
+              faculty, started first DM Critical Care course in India. Got
               training under stalwarts such as JV Divatia, AP Kulkarni, Vijaya
               Patil and Sheila Myatra. Belong to 3rd batch of DM Critical Care
               in India.
@@ -446,9 +446,9 @@ function Education() {
             sx={{ backgroundColor: "white" }}
           >
             <Avatar
-              src={manlogo}
+              src={mullogo}
               alt="Hospital Logo"
-              sx={{ width: 40, height: 40 }}
+              sx={{ width: 60, height: 60 }}
               mt={1}
               mb={1}
             />
@@ -481,9 +481,9 @@ function Education() {
             sx={{ backgroundColor: "white" }}
           >
             <Avatar
-              src={manlogo}
+              src={comlogo}
               alt="Hospital Logo"
-              sx={{ width: 40, height: 40 }}
+              sx={{ width: 70, height: 75,marginTop:'-10px' }}
               mt={1}
               mb={1}
             />
@@ -491,7 +491,7 @@ function Education() {
               MBBS
             </Typography>
             <Typography mt={1} mb={1} fontSize={"20px"} fontWeight={"400"}>
-              St john's medical college Bangalore
+              St John's Medical College Bangalore
             </Typography>
             <Typography
               mt={1}

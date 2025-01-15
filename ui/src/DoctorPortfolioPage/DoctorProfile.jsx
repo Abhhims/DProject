@@ -41,6 +41,7 @@ const DoctorProfile = () => {
             color: "#000",
             fontWeight: 400,
             fontSize: { xs: "14px", sm: "16px", md: "20px" },
+            
           }}
         >
           MBBS, MD(Med), DM | Director, Hitaayu Critical Care LLP
@@ -52,11 +53,13 @@ const DoctorProfile = () => {
             fontWeight: 400,
             mt: 2,
             fontSize: { xs: "14px", sm: "16px", md: "20px" },
+            mb:2
           }}
         >
           Consultant Intensivist | Professor (Critical Care)
         </Typography>
-        <Typography
+       
+        {/* <Typography
           variant="h6"
           sx={{
             color: "#007bff",
@@ -65,8 +68,7 @@ const DoctorProfile = () => {
           }}
         >
           SIMS and RC, Mangaluru
-        </Typography>
-
+        </Typography> */}
         {/* Contact Buttons */}
         <Box
           sx={{

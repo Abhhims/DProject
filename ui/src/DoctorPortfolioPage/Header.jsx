@@ -44,6 +44,14 @@ const Header = (props) => {
     setDrawerOpen(!drawerOpen);
   };
 const [pathClick,setPathClick]=useState("/")
+
+const heandelClickSide=(path)=>{
+  if (path === "Latest Activity") {
+    navigation("/activity");
+  } else{
+    navigation("/");
+  }
+}
   const heandelClick = (path) => {
     setPathClick(path)
     if (path === "/activity") {
@@ -182,7 +190,9 @@ const [pathClick,setPathClick]=useState("/")
           ].map((item) => (
             <ListItem
               button
-              onClick={() => setDrawerOpen(false)}
+              onClick={() =>{
+                heandelClickSide(item.text) 
+                 setDrawerOpen(false)}}
               component="a"
               href={item.link}
               key={item.text}

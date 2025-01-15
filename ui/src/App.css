@@ -6,3 +6,6 @@
   *::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
   }
+  .css-u3q00u-MuiCardContent-root:last-child {
+    padding-bottom: 0 !important; /* Override default padding */
+  }
