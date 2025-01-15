@@ -1,0 +1,406 @@
+/* @font-face {
+    font-family: 'Mollie Glaston';
+    src: url('./fonts/MollieGlaston.woff2') format('woff2'),
+         url('./fonts/MollieGlaston.woff') format('woff'),
+         url('./fonts/MollieGlaston.ttf') format('truetype');
+  
+} */
+body{
+    display: flex;
+    justify-content: center;
+}
+.sub_body{
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.header {
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 50px ; /* Rounded top corners */
+    box-shadow: 0px 4px 4px 0px rgba(86, 167, 209, 0.16);
+    padding: 12px 52px 12px  20px;
+    margin: 0 60px;
+    position: sticky;
+    top: 20px;
+
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Navigation Links */
+.nav a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav a:active,
+.nav a.active {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        margin-top: 10px;
+    }
+    .nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px;
+    background-image: url('background.png');
+/* height: 100vh; */
+height: 100vh;
+max-height: 670px;
+background-repeat: no-repeat;
+}
+
+/* Doctor Details Section */
+.details {
+    max-width: 50%;
+    line-height: 55px;
+}
+
+.designation,
+.hospital {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.designation{
+    color: #000;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px; /* Spacing between buttons */
+    margin: 20px 0;
+}
+.specialties{
+color: rgba(17, 128, 195, 1);
+text-align: center;
+padding: 30px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.specialties span{
+    font-size: clamp(16px, 2.5vw, 32px);
+    font-weight: 600;
+   
+}
+.specialties p{
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 400;
+}
+.contact-btn {
+    text-decoration: none;
+    color: #007bff;
+    background-color: #ffffff;
+    padding: 6px 15px 6px 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px 0px rgba(86, 167, 209, 0.16);
+
+}
+
+.contact-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+}
+
+.experience {
+    font-size: 24px;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* Doctor Image Section */
+.image-section {
+    text-align: center;
+}
+
+
+.signature {
+    position: relative;
+}
+
+.doctor-name {
+    font-size: clamp(40px, 6vw, 52px);
+    font-family: 'Mollie Glaston';
+    font-weight: 400;
+color: rgba(255, 104, 76, 1);
+
+}
+/* Responsive Design */
+@media (max-width: 1300px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        padding: 30px;
+    }
+
+    .details {
+        max-width: 100%;
+    }
+
+    .contact-buttons {
+        justify-content: center; /* Center align buttons */
+    }
+
+    .doctor-image {
+        width: 200px; /* Slightly smaller image for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .doctor-name {
+        font-size: 28px; /* Reduce font size for smaller screens */
+        
+    }
+
+    .designation,
+    .hospital,
+    .experience {
+        font-size: 14px; /* Adjust text sizes */
+    }
+
+    .contact-btn {
+        padding: 8px 12px; /* Smaller buttons */
+        font-size: 14px;
+    }
+
+    .doctor-image {
+        width: 180px; /* Adjust image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Less padding for small screens */
+    }
+
+    .doctor-name {
+        font-size: 24px;
+    }
+
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+    }
+
+    .contact-btn {
+        width: 100%; /* Full width buttons */
+        justify-content: center;
+    }
+
+    .doctor-image {
+        width: 150px; /* Smaller image */
+    }
+
+    .signature {
+        font-size: 20px; /* Adjust signature font size */
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .tabs button {
+    background-color: #fff;
+    border: 1px solid #dce0e6;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.3s;
+  }
+  
+  .tabs button.active {
+    background-color: #ff7043;
+    color: #fff;
+    border-color: #ff7043;
+  }
+  
+  .tabs button:hover {
+    background-color: #ff7043;
+    color: #fff;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    position: relative;
+    padding: 20px 0; /* Added padding to ensure the line centers properly */
+    box-sizing: border-box;
+  }
+  
+  .leftcard,
+  .rightcard {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 80px; /* Increased gap for better spacing */
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dce0e6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
+    /* position: relative; */
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .date-badge {
+    background-color: #eaf1fd;
+    color: #5b8def;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  .card-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .cards::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 40px); /* Adjusted to fit the height properly */
+    background: repeating-linear-gradient(
+      to bottom,
+      #ff7043,
+      #ff7043 5px,
+      transparent 5px,
+      transparent 10px
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly center the line */
+    z-index: -1;
+  }
+  
+  .experience_education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }

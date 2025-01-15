@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DoctorPortfolioPage">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ui/src/DoctorPortfolioPage.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

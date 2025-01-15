@@ -1,0 +1,47 @@
+    
+/* Main Container */
+.profileMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('background.png');
+background-repeat: no-repeat; /* Prevent tiling of the image */
+background-size: cover; 
+background-position: center;
+}
+
+.specialties{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+}
+.education_main{
+   background-image: url("expbackground.png");
+   background-repeat: no-repeat;
+   background-size: contain; 
+   background-position: center;
+   overflow: hidden;
+}
+.backgroung_img{
+    position: absolute;
+   margin-left: -16px;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+
+}
+.no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+
+
+
