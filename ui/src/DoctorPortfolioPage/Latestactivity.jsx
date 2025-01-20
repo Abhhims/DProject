@@ -5,25 +5,25 @@ import Licon from "./Licon.png"; // Left Arrow Icon
 import CustomCard from './Card';
 import { useNavigate } from 'react-router-dom';
 import right from "./right.png"
-const Latestactivity = () => {
+const Latestactivity = ({setPathClick}) => {
 
 const Navigate=useNavigate()
     return (
-        <>
+        <div style={{backgroundColor: 'rgba(241, 251, 255, 1)',width:'100%',boxSizing:'border-box',display:'flex',alignItems:'center',justifyContent:'center',marginTop:'-80px',}}>
             <Box
                 sx={{
                     padding:{ xs:'20px 16px',md:'20px 30px',lg:'20px 45px'},
-                    height: 'auto',
-                    backgroundColor: 'rgba(241, 251, 255, 1)',
-                    minHeight:'85vh',
-                    marginTop:'-80px'
+                    // height: 'auto',
+                    width:'100%',
+                    maxWidth:'1440px'
                 }}
                 id={'Articles'}
             >
                 {/* Header Section */}
                 
                 <Stack direction="row" alignItems={'center'} justifyContent={'start'} style={{ marginTop: '80px',gap:'20px' }}>
-                <img onClick={()=>Navigate("/")} src={right} height={'20px'} style={{}} alt='"navigate back'/> 
+                <img onClick={()=>{setPathClick("/")
+                    Navigate("/")}} src={right} height={'20px'} style={{}} alt='"navigate back'/> 
                     <Typography
                         variant="h6"
                         sx={{ fontSize: { xs: '16px', md: '25px', lg: '32px' } }}
@@ -59,7 +59,7 @@ const Navigate=useNavigate()
                     <CustomCard />
                 </Box>
             </Box>
-        </>
+        </div>
     );
 };
 

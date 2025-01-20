@@ -2,25 +2,31 @@ import React from "react";
 import { Box, Typography, Button, Grid } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import singnature from "./singnature.png"
 import person from "./person.png";
 const DoctorProfile = () => {
   return (
-    <Box
+    <Box className="profileMain" sx={{width:'100%',height:'100%', display:'flex',alignItems:'center',justifyContent:'center', marginTop: { xs: "0px", md: "0", lg: "-90px" },}}>
+      <Box
       sx={{
-        marginTop: { xs: "0px", md: "0", lg: "-90px" },
+       
         display: "flex",
         justifyContent: { xs: "start", md: "start", lg: "space-between" },
         alignItems: "center",
         // height: { xs: "100vh", sm: "100vh" },
         maxHeight: "650px",
+        maxWidth:'1440px',
+        width:'100%',
         objectFit: "cover",
-        padding: { xs: "5px 12px", sm: "0px 40px", md: "50px" },
+        padding: { xs: "80px 12px", sm: "80px 40px", md: "80px 50px" ,lg:'100px 50px'},
         flexDirection: { xs: "column", lg: "row" },
         textAlign: { xs: "center", lg: "left" },
+        position:'relative'
       }}
-      className="profileMain"
+      
       id={"Home"}
     >
+     
       {/* Left Section - Doctor Details */}
       <Box sx={{ maxWidth: { lg: "50%" }, mb: { xs: 3, lg: 0 } }}>
         <Typography
@@ -73,8 +79,9 @@ const DoctorProfile = () => {
         <Box
           sx={{
             display: "flex",
-            gap: 5,
+            gap: 2,
             justifyContent: { xs: "center", lg: "flex-start" },
+            flexWrap:'wrap',
             mb: 2,
           }}
         >
@@ -99,12 +106,12 @@ const DoctorProfile = () => {
               color: "#007bff",
               borderRadius: "50px",
               boxShadow: "0px 4px 4px rgba(86, 167, 209, 0.16)",
+
               "&:hover": {
-                backgroundColor: "rgb(94, 168, 213)",
-                color: "black",
+                boxShadow: "0px 4px 4px rgba(86, 167, 209, 0.16)",
               },
-              padding: "6px 10px",
-              fontSize: { xs: "14px", sm: "16px", md: "22px" },
+              padding: "6px 20px 6px 10px ",
+              fontSize: { xs: "12px", sm: "16px", md: "22px" },
             }}
           >
             +91 9867768221
@@ -130,12 +137,12 @@ const DoctorProfile = () => {
               color: "#007bff",
               borderRadius: "50px",
               boxShadow: "0px 4px 4px rgba(86, 167, 209, 0.16)",
+
               "&:hover": {
-                backgroundColor: "rgb(94, 168, 213)",
-                color: "black",
+                boxShadow: "0px 4px 4px rgba(86, 167, 209, 0.16)",
               },
-              padding: "6px 10px",
-              fontSize: { xs: "14px", sm: "16px", md: "22px" },
+              padding: "6px 20px 6px 10px ",
+              fontSize: { xs: "12px", sm: "16px", md: "22px" },
             }}
           >
             +91 9449818221
@@ -174,7 +181,15 @@ const DoctorProfile = () => {
             height: "auto",
           }}
         />
+        {/* <Box component="img" src={singnature} alt="Sig"
+          sx={{
+            width: "100%",
+            position:'relative',
+            maxWidth: { xs: "300px", md: "350px", lg: "400px" },
+            height: "auto",
+          }}></Box> */}
       </Grid>
+    </Box>
     </Box>
   );
 };

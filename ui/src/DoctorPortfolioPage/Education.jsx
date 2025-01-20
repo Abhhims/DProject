@@ -60,14 +60,16 @@ function Education() {
     setTabValue(newValue);
   };
 
-  return (
+  return (<div className="profileMain" style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',zIndex:1}}>
+   <div className="education_main" style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',zIndex:2}}>
+    
     <Box
-      sx={{ p: 2, position: "relative" }}
-      className="education_main"
+      sx={{ p: 2, position: "relative",width:'100%',maxWidth:'1440px', }}
+      
       id={"Education"}
     >
       {/* Tabs */}
-      <img src={background} className="backgroung_img" alt="" srcset="" />
+      
       <Box
         sx={{
           display: "flex",
@@ -513,6 +515,8 @@ function Education() {
         </Box>
       )}
     </Box>
+    </div> 
+    </div>
   );
 }
 

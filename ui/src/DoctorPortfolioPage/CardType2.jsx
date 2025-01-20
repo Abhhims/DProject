@@ -4,63 +4,99 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  Box,
   Link,
   IconButton,
+  Tooltip,
 } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { useNavigate } from "react-router-dom";
 
-function CustomCard2({ img, title, index, handleOpen }) {
+function CustomCard2({  pathClick,setPathClick, img, title, index, handleOpen }) {
   const navigate = useNavigate();
   return (
-    <div
+    <Link href="#Articles">
+    <div 
       onClick={() => {
+       
         if (title === "YouTube") {
           window.open("https://youtube.com/@konkodyprakash?si=tN9HUh28IlE-DW1b", "_blank");
         } else if (title === "Twitter") {
-           window.open("https://x.com/konkodyprakash?s=08", "_blank");
+          window.open("https://x.com/konkodyprakash?s=08", "_blank");
         } else {
+          index === 4 ? handleOpen() : setPathClick('/activity')
           index === 4 ? handleOpen() : navigate("/activity");
         }
       }}
     >
       <Card
+      
         sx={{
-          maxWidth: { xs: "300px", lg: "400px" },
-          flex: "0 0 auto", // Prevent shrinking, ensure the card takes its space
+          maxWidth: { xs: "125px", sm: "250px", md: "300px", lg: "350px" },
+          height: { xs: "135px", sm: "250px", md: "300px", lg: "350px" },
+          flex: "1 0 calc(33.33% - 16px)",
+          paddingBottom: {sm:1,md:1,lg:1},
           borderRadius: 4,
           boxShadow: 3,
           overflow: "hidden",
-          m: 2,
+          m: 1,
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         {/* Image */}
         <CardMedia
           component="img"
-          height="240"
-          image={img} // Replace with actual image URL
+          sx={{
+            height: { xs: "100px", sm: "150px", md: "200px", lg: "240px" },
+            objectFit: "cover",
+          }}
+          image={img}
           alt="Family Image"
         />
 
         {/* Content */}
-        <CardContent>
-          {/* Title */}
-          <Typography
-            variant="h6"
-            fontWeight="bold"
-            gutterBottom
-            sx={{ color: "black" }}
-          >
-            {title}
-          </Typography>
+        <CardContent
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            flexGrow: 1,
+            padding:{xs:'8px',md:'16px',lg:'18px'},
+            "&:last-child": {
+              paddingBottom: "10px", // Ensures the last-child padding is applied
+            },
+          }}
+        >
+          {/* Title with Ellipsis */}
+          <Tooltip title={title} >
+            <Typography
+              variant="h6"
+              fontWeight="bold"
+              gutterBottom
+              sx={{
+                color: "black",
+                fontSize: { xs: "0.5rem", sm: "0.9rem", md: "1.2rem" },
+                whiteSpace: "nowrap", // Prevents text wrapping
+                overflow: "hidden", // Hides overflow content
+                textOverflow: "ellipsis", // Adds ellipsis
+              }}
+            >
+              {title}
+            </Typography>
+          </Tooltip>
 
           {/* More Info */}
           <Link
             href="#"
             underline="none"
             color="green"
-            sx={{ display: "flex", alignItems: "center", fontWeight: "bold" }}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              fontWeight: "bold",
+              fontSize: { xs: "0.55rem", sm: "1rem", md: "1.2rem" },
+              mt: "auto",
+            }}
           >
             More Info
             <IconButton
@@ -69,14 +105,21 @@ function CustomCard2({ img, title, index, handleOpen }) {
                 color: "green",
                 ml: 0.5,
                 backgroundColor: "rgba(0, 128, 0, 0.1)",
+                fontSize: { xs: "0.6rem", sm: "1rem", md: "1.2rem" },
               }}
             >
-              <ArrowOutwardIcon fontSize="small" />
+              <ArrowOutwardIcon
+                fontSize="small"
+                sx={{
+                  fontSize: { xs: "0.6rem", sm: "1rem", md: "1.2rem" },
+                }}
+              />
             </IconButton>
           </Link>
         </CardContent>
       </Card>
     </div>
+    </Link>
   );
 }
 

@@ -19,11 +19,13 @@ background-position: center;
     padding: 16px;
 }
 .education_main{
-   background-image: url("expbackground.png");
-   background-repeat: no-repeat;
-   background-size: contain; 
-   background-position: center;
-   overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("expbackground.png");
+background-repeat: no-repeat; /* Prevent tiling of the image */
+background-size: contain; 
+background-position: center;
 }
 .backgroung_img{
     position: absolute;

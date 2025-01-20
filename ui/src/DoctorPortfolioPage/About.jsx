@@ -4,9 +4,9 @@ import beat from "./beat.png"
 import { Typography } from '@mui/material';
 const About = () => {
   return (
-    <section className="specialties" id="About">
+    <section className="specialties" id="About" style={{ width:'100%',maxWidth:'1440px',boxSizing:'border-box',padding:'80px 10px'}}>
     <Typography
-      sx={{ color: "rgba(17, 128, 195, 1)", fontWeight: "bold",fontSize:{xs:'16px',md:'30px',lg:'32px',marginTop:'80px'} }}
+      sx={{ color: "rgba(17, 128, 195, 1)", fontWeight: "bold",fontSize:{xs:'16px',md:'30px',lg:'32px',} }}
       >
      Intensivist Driven Care of The Critically Ill in Mangaluru
     </Typography>

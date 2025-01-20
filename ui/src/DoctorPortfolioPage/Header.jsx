@@ -39,13 +39,13 @@ const HideOnScroll = (props) => {
 const Header = (props) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navigation = useNavigate();
-
+const {setPathClick,pathClick}=props
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
   };
-const [pathClick,setPathClick]=useState("/")
 
 const heandelClickSide=(path)=>{
+  setPathClick(path)
   if (path === "Latest Activity") {
     navigation("/activity");
   } else{
@@ -185,7 +185,7 @@ const heandelClickSide=(path)=>{
             { text: "Education", link: "#Education" },
             { text: "Experience", link: "#Education" },
             { text: "Services", link: "#Services" },
-            { text: "Latest Activity", link: "#Activity" },
+            { text: "Latest Activity", link: "#Articles" },
             { text: "Contact Us", link: "#Contact" },
           ].map((item) => (
             <ListItem

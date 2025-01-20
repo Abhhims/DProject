@@ -6,7 +6,7 @@ import Education from './Education';
 import Services from './Services';
 import Activity from './Activity';
 
-const DoctorPortfolio = () => {
+const DoctorPortfolio = (  {pathClick,setPathClick}) => {
     return (
         <>
            
@@ -14,7 +14,7 @@ const DoctorPortfolio = () => {
                 <About></About>
                 <Education></Education>
                 <Services></Services>
-                <Activity></Activity>
+                <Activity pathClick={pathClick} setPathClick={setPathClick} ></Activity>
           
         </>
     );
