@@ -45,7 +45,7 @@ const Footer = () => {
           mb: { xs: 0, md: 0 }, // Margin for small screens
         }}
       >
-        © Copyright 2024
+       @ Copyright © 2024
       </Typography>
 
       {/* Social Icons */}

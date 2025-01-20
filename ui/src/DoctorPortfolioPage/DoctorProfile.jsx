@@ -165,6 +165,31 @@ const DoctorProfile = () => {
       </Box>
 
       {/* Right Section - Doctor Image */}
+      {/* <Grid
+        item
+        xs={12}
+        lg={6}
+        sx={{ textAlign: "center", position: "relative" }}
+      > */}
+        {/* <Box
+          component="img"
+          src={person}
+          alt="Dr Jayaprakash"
+          sx={{
+            width: "100%",
+            maxWidth: { xs: "300px", md: "350px", lg: "400px" },
+            height: "auto",
+          }}
+        /> */}
+        {/* <Box component="img" src={singnature} alt="Sig"
+          sx={{
+            width: "100%",
+            position:'relative',
+            maxWidth: { xs: "300px", md: "350px", lg: "400px" },
+            height: "auto",
+          }}></Box> */}
+      {/* </Grid> */}
+
       <Grid
         item
         xs={12}
@@ -181,13 +206,21 @@ const DoctorProfile = () => {
             height: "auto",
           }}
         />
-        {/* <Box component="img" src={singnature} alt="Sig"
+        <Box
+          component="img"
+          src={singnature}
+          alt="Signature"
           sx={{
-            width: "100%",
-            position:'relative',
-            maxWidth: { xs: "300px", md: "350px", lg: "400px" },
+            marginTop: '-70px',
+            width: "350px",
             height: "auto",
-          }}></Box> */}
+            display: "inline-block",
+            display:'flex',
+            flexDirection:'row',
+            alignItems:'center',
+           
+          }}
+        />
       </Grid>
     </Box>
     </Box>
