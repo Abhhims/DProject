@@ -11,11 +11,11 @@ import {
 import { Stack, styled } from "@mui/system";
 import manlogo from "./manglogo.png";
 import assistant from "./assistant.png";
-import kanlogo from "./kanalogo.png";
+import Srinivas from "./Srinivas.png";
 import tatalogo from "./tatalogo.png";
 import mullogo from "./mullogo.png";
 import comlogo from "./commonlogo.png";
-import background from "./background.png";
+import kilpauk from "./kilpauk.png";
 const StyledCard = styled(Paper)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
@@ -318,9 +318,9 @@ function Education() {
                 >
                   <StyledCard  style={{ justifyContent: "start",gap:10}}>
                   <Avatar
-                      src={comlogo}
+                      src={Srinivas}
                       alt="Hospital Logo"
-                      sx={{ width: 60, height: 60 }}
+                      sx={{ width: 50, height: 50 }}
                     />
                     <Box>
                       <RoleText>
@@ -351,9 +351,9 @@ function Education() {
                       <DateBadge>{"December 2023 - till date"}</DateBadge>
                     </Box>
                     <Avatar
-                      src={comlogo}
+                      src={Srinivas}
                       alt="Hospital Logo"
-                      sx={{ width: 60, height: 60 }}
+                      sx={{ width: 50, height: 50 }}
                     />
                   </StyledCard>
                 </Box>
@@ -448,7 +448,7 @@ function Education() {
             sx={{ backgroundColor: "white" }}
           >
             <Avatar
-              src={mullogo}
+              src={kilpauk}
               alt="Hospital Logo"
               sx={{ width: 60, height: 60 }}
               mt={1}

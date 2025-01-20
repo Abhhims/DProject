@@ -11,7 +11,7 @@ import Liver from "./liver.png"
 import Livertext from "./liverText.png"
 import Emergencies from "./emergency.png"
 import Emergenciestext from "./emergencyText.png"
-import Kidneytext from "./kidenyText.png"
+import Kidney from "./KidneY.png"
 
 const Services = () => {
     let [click, setclick] = useState('Brain')
@@ -58,7 +58,7 @@ const Services = () => {
                         useFlexGap
                         sx={{ flexWrap: 'wrap', border: '1px solid rgba(17, 128, 195, 1)', padding: '10px', borderRadius: '10px',margin:'10px',width:'100%',maxWidth:'780px',height:{lg:'400px'} ,boxSizing:'border-box'}}>
                         <Stack sx={{display:{xs:'none',md:'block',lg:'block', minHeight:'300px',boxSizing:'border-box'}} } >
-                            {click != 'Emergencies' ?<img  src={click=="Brain"?Brain:click=="Lungs"?Lungs:click=='Heart'?Heart:click=='Liver'?Liver:click=='Emergencies'?Emergencies:click=='Kidney'?Liver:Brain} width={'300px'} height={'380px'} alt="" srcset="" />
+                            {click != 'Emergencies' ?<img  src={click=="Brain"?Brain:click=="Lungs"?Lungs:click=='Heart'?Heart:click=='Liver'?Liver:click=='Emergencies'?Emergencies:click=='Kidney'?Kidney:Brain} width={'300px'} height={'380px'} alt="" srcset="" />
                             :<>{ Emergencies.map((e,i)=><ul>
                                 <Stack
                                        key={i}
